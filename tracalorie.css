@@ -1,0 +1,8 @@
+h4.center {
+    margin: 0;
+    font-weight: bold;
+}
+
+i.edit-icon {
+    cursor: pointer;
+}

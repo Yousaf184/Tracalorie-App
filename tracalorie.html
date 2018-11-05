@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Caompatible" content="ie-edge" />
+    <link rel="stylesheet" href="tracalorie.css"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Tracalorie</a>
+        <ul class="right">
+          <li>
+            <button class="btn waves-effect waves-light" id="clear-btn">Clear All</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+
+          <div class="card">
+            <div class="card-content center">
+              <span class="card-title">Add Meal/Food Item</span>
+              <form class="row">
+                <div class="input-field col s4 offset-s2">
+                  <input type="text" placeholder="Meal/Food Item" class="validate"
+                         name="meal-field" id="meal-field">
+                </div>
+                <div class="input-field col s4">
+                  <input type="number" placeholder="Calories" class="validate"
+                          name="calorie-field" id="calorie-field">
+                </div>
+              </form>
+              <button class="btn waves-effect waves-light green darken-3" id="add-btn">
+                <i class="material-icons left">add</i>
+                Add
+              </button>
+              <button class="btn waves-effect waves-light teal darken-3" id="update-btn">
+                <i class="material-icons left">update</i>
+                Update
+              </button>
+              <button class="btn waves-effect waves-light red darken-3" id="delete-btn">
+                <i class="material-icons left">delete</i>
+                Delete
+              </button>
+              <button class="btn waves-effect waves-light grey darken-3 right" id="back-btn">
+                <i class="material-icons left">keyboard_backspace</i>
+                Back
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <h4 id="total-calories" class="center">Total Calories = 0</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <ul class="collection meal-collection">
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="tracalorie.js"></script>
+  </body>
+</html>
